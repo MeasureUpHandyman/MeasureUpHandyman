@@ -3,130 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MeasureUp Handyman</title>
+    <title>Measure Up Handyman</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        body {
+        /* Basic Reset */
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: 'Montserrat', sans-serif;
             background-color: #f8f7f7;
             color: #424d53;
+            line-height: 1.6;
         }
 
+        /* Header Section */
         header {
             background-color: #424d53;
             color: #f8f7f7;
             padding: 20px 0;
             text-align: center;
-            font-family: 'Cinzel', serif;
-        }
-
-        header h1 {
-            font-size: 48px;
-            font-style: italic;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 16px;
-            font-family: 'Montserrat', sans-serif;
-            margin: 5px 0;
-        }
-
-        #services {
-            padding: 50px 0;
-            text-align: center;
-            background-color: #f8f7f7;
-        }
-
-        #services h2 {
-            font-size: 36px;
-            font-family: 'Cinzel', serif;
-        }
-
-        .services-grid {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-        }
-
-        .service-card {
-            width: 30%;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-card h3 {
-            font-family: 'Cinzel', serif;
-            font-size: 24px;
-            color: #424d53;
-        }
-
-        .service-card p {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 16px;
-        }
-
-        footer {
-            background-color: #424d53;
-            color: #f8f7f7;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer p {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .services-grid {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service-card {
-                width: 80%;
-                margin-bottom: 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header Section -->
-    <header>
-        <h1>Measure Up Handyman</h1>
-        <p>Reliable & Professional Handyman Services</p>
-        <p>Call us: 207-289-8607 | Hours: 7am - 5pm</p>
-    </header>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Painting Services</h3>
-                <p>Professional painting services for both interiors and exteriors.</p>
-            </div>
-            <div class="service-card">
-                <h3>Furniture Assembly</h3>
-                <p>We assemble furniture of all types quickly and efficiently.</p>
-            </div>
-            <div class="service-card">
-                <h3>Door & Window Repairs</h3>
-                <p>Repairs and installations for doors, windows, and hardware.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Measure Up Handyman | Veteran Owned & Operated</p>
-    </footer>
-
-</body>
-</html>
+            font-family: 'Cinzel', serif
