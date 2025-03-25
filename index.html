@@ -22,12 +22,11 @@
 
         /* Header Section */
         header {
-            background: url('your-hero-image.jpg') no-repeat center center/cover;
             color: #f8f7f7;
             text-align: center;
             padding: 80px 20px;
             font-family: 'Cinzel', serif;
-            position: relative;
+            background-color: #424d53; /* A background color instead of an image */
         }
 
         header h1 {
@@ -61,4 +60,76 @@
         #quality {
             padding: 60px 20px;
             text-align: center;
-            background-color: #f8f7f
+            background-color: #f8f7f7;
+        }
+
+        #quality h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 40px;
+            color: #4e463e;
+            margin-bottom: 20px;
+        }
+
+        #quality p {
+            font-size: 18px;
+            color: #424d53;
+            margin-top: 10px;
+        }
+
+        /* Services Section */
+        #services {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f8f7f7;
+        }
+
+        #services h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .services-grid {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+
+        .service-card h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            color: #424d53;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #424d53;
+        }
+
+        /* Bullet Points Section */
+        .bullet-points {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .bullet-points li {
+            font-size: 18px;
+            margin: 10px 0;
+            text-align: left;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .bullet-points li:before {
+            content: "🔧";
+            position: absolute;
