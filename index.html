@@ -3,53 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MeasureUp Handyman</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@1,600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f7f7;
+            color: #424d53;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3em;
+            font-style: italic;
+            color: #f27308;
+            margin: 0;
+        }
+        header {
+            background-color: #4e463e;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #f8f7f7;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #4e463e;
+            color: #f8f7f7;
+            text-align: center;
+            padding: 10px;
+        }
+        #services ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #services ul li {
+            width: 45%;
+            margin: 10px 0;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f8f7f7;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: #424d53;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f27308;
+            color: white;
+        }
+        .veteran-badge {
+            background-color: #f27308;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .about-section {
+            background-color: #4e463e;
+            color: #f8f7f7;
+            padding: 40px;
+        }
+        .testimonials {
+            background-color: #f8f7f7;
+            padding: 40px;
+            color: #424d53;
+        }
+        .testimonial {
+            margin-bottom: 20px;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+        .testimonial p {
+            font-size: 1.1em;
+        }
+        .testimonial cite {
+            font-size: 1em;
+            color: #f27308;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to MeasureUp Handyman</h1>
+        <h1>MeasureUp Handyman</h1>
+        <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.2em;">Your Trusted Handyman Services</h2>
+        <div class="veteran-badge">Veteran Owned & Operated</div>
         <nav>
             <ul>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#services">Our Services</a></li>
                 <li><a href="#about">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Plumbing</li>
-            <li>Electrical Repairs</li>
-            <li>Painting</li>
-            <li>Furniture Assembly</li>
-        </ul>
-    </section>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="dropdown">
+                <button>General Services</button>
+                <div class="dropdown-content">
+                    <a href="#">Painting Services</a>
+                    <a href="#">Furniture Assembly</a>
+                    <a href="#">Gutter Cleanup</a>
+                    <a href="#">Fixing Doors</a>
+                    <a href="#">Trim Work</a>
+                    <a href="#">Drywall Repairs</a>
+                    <a href="#">Deck Repairs</a>
+                    <a href="#">Tile Installation</a>
+                    <a href="#">Baseboard Heating Covers</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Security & Installations</button>
+                <div class="dropdown-content">
+                    <a href="#">Light Fixture Installation</a>
+                    <a href="#">Ceiling Fan Installation</a>
+                    <a href="#">Security Camera Setup</a>
+                    <a href="#">Childproofing</a>
+                    <a href="#">Door Lock Installation</a>
+                    <a href="#">Smoke/Carbon Monoxide Detector Installation</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Home Improvement</button>
+                <div class="dropdown-content">
+                    <a href="#">Kitchen & Bathroom Remodeling</a>
+                    <a href="#">Shower Door Installation</a>
+                    <a href="#">Vanity & Mirror Installation</a>
+                    <a href="#">Faucet & Sink Repairs</a>
+                    <a href="#">Caulking & Sealing Tubs</a>
+                    <a href="#">Backsplash Installation</a>
+                    <a href="#">Flooring Installation</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Real Estate Services</button>
+                <div class="dropdown-content">
+                    <a href="#">Home Staging Repairs</a>
+                    <a href="#">Pre-sale Home Repairs</a>
+                    <a href="#">Post-sale Repairs</a>
+                    <a href="#">Rental Property Maintenance</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="about">
-        <h2>About MeasureUp Handyman</h2>
-        <p>We are a professional handyman service offering a wide range of home improvement services. Our team is experienced and reliable, always ensuring high-quality work.</p>
-    </section>
+        <section id="about" class="about-section">
+            <h2>About MeasureUp Handyman</h2>
+            <p>We are a professional, veteran-owned handyman company offering a wide range of home improvement services. Our team is experienced and reliable, always ensuring high-quality work that exceeds expectations. Whether you're looking to update your home, fix a leaky faucet, or install new furniture, we are here to help. At MeasureUp Handyman, we are dedicated to providing top-notch services with a focus on professionalism, attention to detail, and customer satisfaction. We can come out within the week, ensuring your home is always in great hands.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: info@measureuphandyman.com</p>
-        <form action="#" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <section id="testimonials" class="testimonials">
+            <h2>Customer Testimonials</h2>
+            <!-- Example Testimonial -->
+            <div class="testimonial">
+                <p>"MeasureUp Handyman was quick, professional, and exceeded my expectations. They came out within the week to repair my bathroom faucet. Highly recommend!"</p>
+                <cite>- John D., Homeowner</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Excellent service! They assembled our new furniture and installed light fixtures, all within a couple of days. Very professional!"</p>
+                <cite>- Sarah T., Office Manager</cite>
+            </div>
+            <!-- Add more testimonials manually -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for your next project. Call us at <strong>207-289-8607</strong> or email <a href="mailto:contact@measureuphandyman.com">contact@measureuphandyman.com</a></p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 MeasureUp Handyman</p>
+        <p>&copy; 2025 MeasureUp Handyman. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
