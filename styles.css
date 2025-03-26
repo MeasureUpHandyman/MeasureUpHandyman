@@ -1,30 +1,229 @@
-/* Center text for headlines */
-.center-text {
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f7f7;
+    color: #424d53;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f27308; /* Orange background */
+    color: #f8f7f7;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%; /* Ensure header spans the full width */
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Remove padding */
+}
+
+.logo-wrapper {
+    background-color: #424d53;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.logo {
+    border: 5px solid #f27308; /* Orange border */
+    margin: 0;
+}
+
+.logo-image {
+    width: 50%; /* Set logo size to 50% */
+    max-width: 100%;
+    height: auto; /* Ensure the logo maintains its original aspect ratio */
+}
+
+.contact-info {
+    background-color: #424d53;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #f8f7f7;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.orange-text {
+    color: #f27308; /* Set contact info text to orange */
+}
+
+.black-email {
+    color: #000000; /* Set email address to black */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f27308; /* Match header color */
+}
+
+nav a {
+    color: #f8f7f7;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #d65a06;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid #424d53;
+    background-color: #ffffff;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.centered {
     text-align: center;
 }
 
-/* Style for the text boxes */
-.text-box {
-    width: 30%;
-    padding: 10px;
-    margin: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+.services-image, .about-us-image, .additional-image {
+    width: 50%; /* Scale down to 50% */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
-/* Position the left and right text boxes */
-.left-box {
-    float: left;
+.tagline {
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    text-align: center;  /* Center the taglines */
 }
 
-.right-box {
-    float: right;
+.tagline-montserrat {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 0.5rem 0; /* Reduce margin */
 }
 
-/* Clear floats for main content */
-main::after {
-    content: "";
-    display: table;
-    clear: both;
+.tool-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tool-list li {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #f27308;
+    color: #f8f7f7;
+    border-radius: 15px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+tool-list li:hover {
+    background-color: #d65a06;
+}
+
+footer {
+    background-color: #4e463e;
+    color: #f8f7f7;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+footer .contact-info a {
+    color: #f27308; /* Change email address to orange */
+    text-decoration: none;
+}
+
+footer .contact-info a:hover {
+    text-decoration: underline;
+}
+
+.orange-email {
+    color: #f27308; /* Change email address to orange */
+}
+
+.contact-info {
+    font-weight: bold;
+}
+
+.veteran-owned {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.dropdown {
+    margin: 1rem 0;
+}
+
+.dropdown-btn {
+    width: 100%;
+    background-color: #e0e0e0;
+    color: #424d53;
+    padding: 0.5rem;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.dropdown-btn:hover {
+    background-color: #d0d0d0;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border: 1px solid #424d53;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 0.5rem;
+    }
+
+    section {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    .dropdown-btn {
+        font-size: 1rem;
+    }
 }
