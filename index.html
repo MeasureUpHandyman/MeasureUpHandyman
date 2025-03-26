@@ -115,7 +115,7 @@
         </section>
         <section id="about-us">
             <h2 class="center-text">About Us</h2>
-            <p>Measure Up Handyman is dedicated to enhancing your home with precision and quality craftsmanship. Our veteran-owned team ensures that each project receives the utmost care and attention. Experience the difference in professionalism that we bring to every job.</p>
+            <p>Measure Up Handyman is dedicated to enhancing your home with precision and quality craftsmanship. Our veteran-owned team ensures that each project receives the utmost care and attention to detail.</p>
         </section>
         
         <!-- Existing Image Section -->
@@ -128,8 +128,8 @@
         </section>
         <section id="testimonials">
             <h2 class="center-text">Testimonials</h2>
-            <p class="center-text">"Measure Up Handyman transformed our kitchen with a beautiful new backsplash tile. The attention to detail and craftsmanship were exceptional. Highly recommend!" - Susan Beech</p>
-            <p class="center-text">"The built-out fireplace with functional bench seating and storage that Measure Up Handyman created was the perfect update to our living room renovation. It's both beautiful and practical." - Anthony Deider</p>
+            <p class="center-text">"Measure Up Handyman transformed our kitchen with a beautiful new backsplash tile. The attention to detail and craftsmanship were exceptional. Highly recommend!"</p>
+            <p class="center-text">"The built-out fireplace with functional bench seating and storage that Measure Up Handyman created was the perfect update to our living room renovation. It's beautiful and practical!"</p>
         </section>
         
         <!-- Move Additional Image Section -->
@@ -149,18 +149,24 @@
         <p>Email: <a href="mailto:info.measureup@gmail.com" class="orange-email">info.measureup@gmail.com</a></p>
     </footer>
     <script>
+        console.log('Script loaded');  // Add this line
+
         document.querySelectorAll('.dropdown-btn').forEach(button => {
+            console.log('Button found:', button);  // Add this line
             button.addEventListener('click', () => {
                 const dropdownContent = button.nextElementSibling;
                 dropdownContent.classList.toggle('show');
+                console.log('Dropdown toggled:', dropdownContent);  // Add this line
             });
         });
 
         window.onclick = event => {
+            console.log('Window clicked:', event.target);  // Add this line
             if (!event.target.matches('.dropdown-btn')) {
                 document.querySelectorAll('.dropdown-content').forEach(dropdown => {
                     if (dropdown.classList.contains('show')) {
                         dropdown.classList.remove('show');
+                        console.log('Dropdown closed:', dropdown);  // Add this line
                     }
                 });
             }
