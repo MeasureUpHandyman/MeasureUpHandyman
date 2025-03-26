@@ -1,68 +1,30 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f8f7f7;
-    color: #424d53;
-    margin: 0;
-    padding: 0;
-}
-header {
-    background-color: #f27308;
-    color: #f8f7f7;
-    padding: 1rem;
+/* Center text for headlines */
+.center-text {
     text-align: center;
 }
-header h1 {
-    font-family: 'Cinzel', serif;
-    margin: 0;
+
+/* Style for the text boxes */
+.text-box {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
-header h2 {
-    margin: 0;
-    font-size: 1.2rem;
+
+/* Position the left and right text boxes */
+.left-box {
+    float: left;
 }
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #4e463e;
+
+.right-box {
+    float: right;
 }
-nav a {
-    color: #f8f7f7;
-    padding: 1rem;
-    text-decoration: none;
-}
-nav a:hover {
-    background-color: #424d53;
-}
-section {
-    padding: 2rem;
-}
-footer {
-    background-color: #4e463e;
-    color: #f8f7f7;
-    text-align: center;
-    padding: 1rem;
-}
-.contact-info {
-    font-weight: bold;
-}
-.veteran-owned {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-}
-.testimonials {
-    background-color: #f27308;
-    color: #f8f7f7;
-    padding: 2rem;
-    text-align: center;
-}
-.testimonials p {
-    font-style: italic;
-}
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-    nav a {
-        padding: 0.5rem;
-    }
-    /* Other mobile styles */
+
+/* Clear floats for main content */
+main::after {
+    content: "";
+    display: table;
+    clear: both;
 }
