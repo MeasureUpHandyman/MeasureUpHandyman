@@ -138,7 +138,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
-tool-list li:hover {
+.tool-list li:hover {
     background-color: #d65a06;
 }
 
